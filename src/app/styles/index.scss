@@ -1,0 +1,27 @@
+@import './mixins.scss';
+
+body {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  max-width: 900px;
+  height: 900px;
+  margin: auto;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, calc(100% / 3));
+
+  @include sp {
+      height: 600px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 20px;
+
+    @include sp {
+      font-size: 15px;
+    }
+  }
+}
