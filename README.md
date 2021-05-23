@@ -9,24 +9,14 @@
 ### Setup project
 ```bash
 # Get source
-git clone git@github.com:moneyforwardvietnam/asset_accounting_frontend.git
+git clone git@github.com:NguyenTrung1995/mini-game.git
 
 # Install service
-cd asset_accounting_frontend
+cd mini-game
 yarn install
+yarn install-server
 
-# Add config environment variables
-cp .env.dev .env
+# Start game
+yarn start-dev
 
-# Start service
-yarn start
-
-# Run test
-yarn test
-
-# Run check eslint
-yarn lint
-
-# Run storybook
-yarn storybook
 ```
