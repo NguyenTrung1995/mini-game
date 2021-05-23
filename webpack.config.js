@@ -12,6 +12,8 @@ module.exports = {
     proxy: {
       '/api': 'http://localhost:8001',
     },
+    compress: true,
+    stats: 'errors-only'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
